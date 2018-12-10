@@ -10,5 +10,5 @@ You can find it on Docker Hub: https://hub.docker.com/r/repassyl/texlive-full/
 
 Current working directory should be where your Latex project's main file is. Then you can call for example xelatex:
 
-    docker run --rm -ti -v "$PWD":/home/latex/work/ repassyl/texlive-full \
+    docker run --rm -ti -e LATEX_UID=$UID -v "$PWD":/home/latex/work/ repassyl/texlive-full \
     xelatex -shell-escape main.tex
