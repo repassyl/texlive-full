@@ -1,4 +1,4 @@
-# Builded by:
+# Built by:
 # docker build -t latex .
 
 # points to the latest Ubuntu LTS
